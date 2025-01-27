@@ -34,6 +34,9 @@ header nav{
 /* teak-park */
 main{
     margin: 0 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .teak-park{
@@ -41,9 +44,11 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-bottom: 40px;
 }
 
-.teak-park .city{
+.teak-park .city,
+.about .city{
     width: 350px;
 }
 
@@ -85,6 +90,166 @@ main{
     font-size: 16px;
     font-weight: bold;
     border-radius: 7px;
+}
+
+/* Layout */
+.layout-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.layout-details button{
+    background-color: #ffddb5;
+    color: rgb(131, 84, 0);
+    border: 1px solid rgb(131, 84, 0);
+}
+
+.layout-details .view{
+    display: flex;
+}
+
+.layout-details .view button{
+    padding: 10px;
+}
+
+.layout-details .view button:first-child{
+    border-radius: 7px 0 0 7px;
+    background-color: #fff;
+}
+
+.layout-details .view button:last-child{
+    border-radius: 0 7px 7px 0;
+}
+
+.layout-details .any{
+    display: flex;
+    gap: 10px;
+    border-radius: 7px;
+}
+
+.layout-details .any button{
+    padding: 10px;
+}
+
+.layout-details .download,
+.layout-details .reset{
+    padding: 10px;
+    border: none;
+}
+
+.layout-details .all{
+    display: flex;
+}
+
+.layout-details .all button{
+    padding: 10px;
+}
+
+.layout-details .all button:first-child{
+    border-radius: 7px 0 0 7px;
+    background-color: #fff;
+}
+
+.layout-details .all button:last-child{
+    border-radius: 0 7px 7px 0;
+}
+
+.layout-details img{
+    width: 80%;
+    background-color: #ffddb5;
+    border-radius: 20px;
+    border: 1px solid rgb(131, 84, 0);
+}
+
+/* near */
+
+.near{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.near img{
+    width: 100%;
+    background-color: #ffddb5;
+}
+
+/* features */
+.features{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features .images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.features img{
+    width: 100px;
+    border: 1px solid rgb(131, 84, 0);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+/* contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.contact h1{
+    background-color: #ffddb5;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.contact h2{
+    font-size: 30px;
+}
+
+.contact button{
+    background-color: #ffddb5;
+    color: rgb(131, 84, 0);
+    border: 1px solid rgb(131, 84, 0);
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about .text{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    text-align: center;
 }
 
 @media screen and (max-width: 1025px) {
